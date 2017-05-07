@@ -12,7 +12,7 @@ read password
 #pip
 echo "安装pip......"
 wget https://bootstrap.pypa.io/get-pip.py  --no-check-certificate
-python get-pip.py
+sudo python get-pip.py
 rm get-pip.py
 echo "************pip安装成功***********"
 echo ""
@@ -51,7 +51,7 @@ echo ""
 
 #docker-compose
 echo "安装docker-compose......."
-pip	install	-U	docker-compose
+sudo pip	install	-U docker-compose
 echo "**************docker-compose安装成功**************"
 echo ""
 echo ""
