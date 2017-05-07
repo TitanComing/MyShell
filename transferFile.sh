@@ -12,15 +12,15 @@ Port2="9003"
 User1="work1"
 User2="work2"
 
-echo "请输入目的服务器:work1或者work2,通过按键1和2选择......"
+echo "请输入目的服务器:work1或者work2,通过按键1和2选择:"
 read WNum
-echo "请选择上传还是下载:上传按键1,下载按键2......"
+echo "请选择上传还是下载:上传按键1,下载按键2:"
 read TNum
-echo "请选择操作文件还是目录:文件按键1,目录按键2......"
+echo "请选择操作文件还是目录:文件按键1,目录按键2:"
 read FNum
-echo "请输入源位置......"
+echo "请输入源位置:"
 read FromFile
-echo "请输入目的位置......"
+echo "请输入目的位置:"
 read ToFile
 
 case $TNum in

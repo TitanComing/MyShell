@@ -25,7 +25,7 @@ do
     ;;
     3 )
     cd /usr/bin
-    chromium-browser
+    google-chrome-stable
     echo "启动chrome..."
     ;;
     4 )
