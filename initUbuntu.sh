@@ -1,9 +1,12 @@
 #!/bin/bash
 #-*-coding:utf8-*-
 
-#安装ubuntu之后初始4系统
-#peng
+#安装ubuntu之后初始化系统
+#created by peng
 #2017.5.7
+
+#version 0.1 2017.5.7
+#基础功能完成
 
 #path
 echo "请输入root密码:"
