@@ -47,14 +47,14 @@ echo ""
 
 #docker
 echo "安装docker......"
-curl	-sSL	https://get.docker.com/	|	sh
+curl -sSL https://get.docker.com/ | sh
 echo "**************docker安装成功************"
 echo ""
 echo ""
 
 #docker-compose
 echo "安装docker-compose......."
-sudo pip	install	-U docker-compose
+sudo pip install	-U docker-compose
 echo "**************docker-compose安装成功**************"
 echo ""
 echo ""
