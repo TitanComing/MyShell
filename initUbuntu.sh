@@ -54,7 +54,7 @@ echo ""
 
 #docker-compose
 echo "安装docker-compose......."
-sudo pip install	-U docker-compose
+sudo pip install -U docker-compose
 echo "**************docker-compose安装成功**************"
 echo ""
 echo ""
