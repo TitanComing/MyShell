@@ -5,6 +5,9 @@
 #created by peng
 #2017.5.7
 
+#version 0.2  2017.8.9
+#增加了node和npm的安装，node版本6.9
+
 #version 0.1 2017.5.7
 #基础功能完成
 
@@ -17,7 +20,7 @@ echo "安装pip......"
 wget https://bootstrap.pypa.io/get-pip.py  --no-check-certificate
 sudo python get-pip.py
 rm get-pip.py
-echo "************pip安装成功***********"
+echo "************pip安装完毕***********"
 echo ""
 echo ""
 
@@ -25,7 +28,7 @@ echo ""
 echo "安装java......"
 echo password | sudo apt-get -y install default-jre
 echo password | sudo apt-get -y install default-jdk
-echo "*************java安装成功**********"
+echo "*************java安装完毕**********"
 echo ""
 echo ""
 
@@ -34,28 +37,37 @@ echo "安装atom......"
 echo password | sudo add-apt-repository ppa:webupd8team/atom
 sudo apt-get update > /dev/null
 sudo apt-get -y install atom
-echo "*************atom安装成功*************"
+echo "*************atom安装完毕*************"
 echo ""
 echo ""
 
 #ssh
 echo "安装ssh-client......."
 echo password | sudo apt-get -y install openssh-client
-echo "************ssh—client安装成功**********"
+echo "************ssh—client安装完毕**********"
 echo ""
 echo ""
 
 #docker
 echo "安装docker......"
-curl -sSL https://get.docker.com/ | sh
-echo "**************docker安装成功************"
+echo password | curl -sSL https://get.docker.com/ | sh
+echo "**************docker安装完毕************"
 echo ""
 echo ""
 
 #docker-compose
 echo "安装docker-compose......."
-sudo pip install -U docker-compose
-echo "**************docker-compose安装成功**************"
+echo password | sudo pip install -U docker-compose
+echo "**************docker-compose安装完毕**************"
+echo ""
+echo ""
+
+#nodejs和npm
+echo "安装nodejs和npm......."
+echo password | sudo apt-get -y install npm
+echo password | sudo npm install -g n
+echo password | sudo n 6.9
+echo "**************docker-compose安装完毕**************"
 echo ""
 echo ""
 
@@ -64,7 +76,7 @@ echo "安装shadowsocks-qt5......"
 echo password | sudo add-apt-repository ppa:hzwhuang/ss-qt5
 sudo apt-get update > /dev/null
 sudo apt-get -y install shadowsocks-qt5
-echo "**************shadowsocks-qt5安装成功**********"
+echo "**************shadowsocks-qt5安装完毕**********"
 echo ""
 echo ""
 
@@ -74,7 +86,7 @@ wget -q -O - https://raw.githubusercontent.com/longhr/ubuntu1604hub/master/linux
 sh -c 'echo "deb [ arch=amd64 ] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 sudo apt-get update > /dev/null
 sudo apt-get -y install google-chrome-stable
-echo "**********google-chrome-stable安装成功**********"
+echo "**********google-chrome-stable安装完毕**********"
 echo ""
 echo ""
 
@@ -116,3 +128,9 @@ ss-qt5 --version
 echo ""
 echo "******google-chrome-stable --version****"
 google-chrome-stable --version
+echo ""
+echo "******node --version****"
+node -v
+echo ""
+echo "******npm --version****"
+npm -v
